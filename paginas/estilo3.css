@@ -1,0 +1,16 @@
+div {
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    float: left;
+}
+
+.primeiro {
+    background-color: green;
+    left: 20%;
+}
+
+.segundo {
+    background-color: blue;
+    left: 70%;
+}

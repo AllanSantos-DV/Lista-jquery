@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pag 10</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/voltar.js"></script>
+</head>
+
+<body class="text-center bg-dark-subtle d-flex flex-column  justify-content-center vh-100">
+    <div class="voltar"></div>
+    <h1>Selecione uma operação para continuar.</h1>
+    <div id="operadores">
+        <button class="btn btn-primary">Adição</button>
+        <button class="btn btn-secondary">Subtração</button>
+        <button class="btn btn-success">Divisão</button>
+        <button class="btn btn-danger">Multiplicação</button>
+    </div><br>
+    <form style="max-width: 40vh; margin: 0 auto;">
+        <input type="text" class="form-control" id="campo1" placeholder="Valor 1">
+        <span id="operador"></span>
+        <input type="text" class="form-control" id="campo2" placeholder="Valor 2"><br>
+        <input type="submit" class="btn btn-primary disabled" id="bot1"><br>
+    </form>
+    <h1 id="total"></h1>
+    <script src="link9.js"></script>
+</body>
+
+</html>

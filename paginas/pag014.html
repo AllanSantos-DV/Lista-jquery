@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pag 014</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <style>
+        .quadrado {
+            position: absolute;
+            background-color: black;
+            width: 20%;
+            height: 20%;
+            left: 0%;
+        }
+    </style>
+    <script src="js/voltar.js"></script>
+</head>
+
+<body class="text-center bg-dark-subtle d-flex flex-column  justify-content-center vh-100">
+    <div class="voltar"></div>
+    <p>
+        <button class="btn btn-primary" id="Esquerda">&laquo;</button>
+        <button class="btn btn-warning" id="pare">Pare!</button>
+        <button class="btn btn-primary" id="Direita">&raquo;</button>
+    </p>
+    <div>
+        <div class="quadrado"></div>
+    </div>
+    <script>
+        var larguraJanela = $(window).width();
+        $("#Direita").click(function () {
+            var larguraQuadrado = $(".quadrado").width();
+            $(".quadrado").animate({ left: "+=80%" }, {
+                duration: 2000,
+                step: function (now, fx) {
+                    var posicao = $(this).offset().left;
+                    if (posicao + larguraQuadrado >= larguraJanela) {
+                        $(this).stop();
+                    }
+                }
+            });
+        });
+        $("#pare").click(function () {
+            $(".quadrado").stop();
+        });
+        $("#Esquerda").click(function () {
+            $(".quadrado").animate({ left: "-=80%" }, {
+                duration: 2000,
+                step: function (now, fx) {
+                    var posicao = $(this).offset().left;
+                    if (posicao <= 0) {
+                        $(this).stop();
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links em Cards</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="paginas/js/jquery-3.7.0.min.js"></script>
+</head>
+
+<body class="text-center bg-dark-subtle">
+    <div class="container">
+        <h1>Exercicios Jquery</h1><br><br>
+        <div class="row">
+            <div class="col-md-4 ">
+                <div class="card bg-dark-subtle h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Saudação do Mundo</h5>
+                        <p class="card-text flex-grow-1" style="height: 3em;overflow: hidden;">Este código exibe uma caixa de diálogo de alerta com a mensagem
+                            “Olá
+                            mundo!” quando a página é carregada. Ele usa o jQuery para detectar quando o documento está
+                            pronto e, em seguida, chama a função alert() para exibir a mensagem. Além disso, o código
+                            inclui o Bootstrap para fornecer estilos padrão para a página.</p>
+                        <button type="button" class="btn btn-info mostrar"
+                            data-title="$(this).siblings('.card-title').text()"
+                            data-description="$(this).siblings('.card-text').text()">Ler mais</button>
+                        <a href="paginas/pag01.html?fromlink=true" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark-subtle h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Clique para Saudar</h5>
+                        <p class="card-text flex-grow-1" style="height: 3em;overflow: hidden;">Este código exibe uma caixa de diálogo de alerta com a mensagem
+                            “Olá
+                            mundo!” quando o usuário clica em um link na página. Ele usa o jQuery para adicionar uma
+                            função de clique ao elemento a na página e, em seguida, chama a função alert() para exibir a
+                            mensagem quando o link é clicado. O código inclui o Bootstrap para fornecer estilos padrão
+                            para a página e um arquivo JavaScript externo chamado link.js que contém o código jQuery.
+                        </p>
+                        <button type="button" class="btn btn-info mostrar"
+                            data-title="$(this).siblings('.card-title').text()"
+                            data-description="$(this).siblings('.card-text').text()">Ler mais</button>
+                        <a href="paginas/pag02.html?fromlink=true" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark-subtle h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Clique para Estilizar</h5>
+                        <p class="card-text flex-grow-1" style="height: 3em;overflow: hidden;">Este código adiciona uma classe CSS chamada test ao elemento p
+                            na página
+                            quando o usuário clica em um link. Ele usa o jQuery para adicionar uma função de clique ao
+                            elemento a na página e, em seguida, chama a função addClass() para adicionar a classe test
+                            ao elemento p quando o link é clicado. O código inclui o Bootstrap para fornecer estilos
+                            padrão para a página e dois arquivos JavaScript externos chamados link.js e link2.js que
+                            contêm o código jQuery. Além disso, o código inclui um arquivo CSS externo chamado
+                            estilo.css que contem os estilos para a classe test.</p>
+                        <button type="button" class="btn btn-info mostrar"
+                            data-title="$(this).siblings('.card-title').text()"
+                            data-description="$(this).siblings('.card-text').text()">Ler mais</button>
+                        <a href="paginas/pag03.html?fromlink=true" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 ">
+                <div class="card bg-dark-subtle h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Clique para Personalizar</h5>
+                        <p class="card-text flex-grow-1" style="height: 3em;overflow: hidden;">Este código altera o estilo e o texto do elemento p na página
+                            quando o
+                            usuário clica em um link. Ele usa o jQuery para adicionar uma função de clique ao elemento a
+                            na página e, em seguida, chama as funções css() e text() para alterar o estilo e o texto do
+                            elemento p, respectivamente, quando o link é clicado. O código inclui o Bootstrap para
+                            fornecer estilos padrão para a página e um arquivo JavaScript externo chamado link3.js que
+                            contém o código jQuery. Quando o link é clicado, uma borda tracejada vermelha é adicionada
+                            ao elemento p e seu texto é alterado para “Allan”.</p>
+                        <button type="button" class="btn btn-info mostrar"
+                            data-title="$(this).siblings('.card-title').text()"
+                            data-description="$(this).siblings('.card-text').text()">Ler mais</button>
+                        <a href="paginas/pag04.html?fromlink=true" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark-subtle h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Efeito de Passar o Mouse</h5>
+                        <p class="card-text flex-grow-1" style="height: 3em;overflow: hidden;">Este código altera o estilo e o texto de vários elementos na
+                            página quando
+                            o usuário passa o mouse sobre eles. Ele usa o jQuery para adicionar funções hover aos
+                            elementos #lista_teste, #lista_teste2 e #Allan na página. Quando o usuário passa o mouse
+                            sobre os elementos #lista_teste e #lista_teste2, a classe CSS fundo é adicionada a eles,
+                            alterando sua cor de fundo para vermelho. Quando o usuário move o mouse para fora desses
+                            elementos, a classe fundo é removida, restaurando sua cor de fundo original. Quando o
+                            usuário passa o mouse sobre o elemento #Allan, seu texto é alterado para “Allan está aqui”.
+                            Quando o usuário move o mouse para fora desse elemento, seu texto é alterado para “Allan não
+                            está mais aqui”. O código inclui o Bootstrap para fornecer estilos padrão para a página, um
+                            arquivo JavaScript externo chamado link4.js que contém o código jQuery e um arquivo CSS
+                            externo chamado estilo2.css que define os estilos para a classe fundo.</p>
+                        <button type="button" class="btn btn-info mostrar"
+                            data-title="$(this).siblings('.card-title').text()"
+                            data-description="$(this).siblings('.card-text').text()">Ler mais</button>
+                        <a href="paginas/pag05.html?fromlink=true" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark-subtle h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Alternador de Exibição</h5>
+                        <p class="card-text flex-grow-1" style="height: 3em;overflow: hidden;">Este código adiciona funcionalidade a dois botões na página
+                            para mostrar e
+                            ocultar um elemento p. Ele usa o jQuery para adicionar funções de clique aos botões #botao1
+                            e #botao2 na página. Quando o botão #botao1 é clicado, o elemento p é ocultado rapidamente,
+                            o botão #botao1 é desativado e o botão #botao2 é ativado. Quando o botão #botao2 é clicado,
+                            o elemento p é mostrado lentamente, o botão #botao2 é desativado e o botão #botao1 é
+                            ativado. O código inclui o Bootstrap para fornecer estilos padrão para a página e um arquivo
+                            JavaScript externo chamado link5.js que contém o código jQuery. Quando a página é carregada,
+                            o botão #botao2 é desativado por padrão.</p>
+                        <button type="button" class="btn btn-info mostrar"
+                            data-title="$(this).siblings('.card-title').text()"
+                            data-description="$(this).siblings('.card-text').text()">Ler mais</button>
+                        <a href="paginas/pag06.html?fromlink=true" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 ">
+                <div class="card bg-dark-subtle h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Gerador de Lista</h5>
+                        <p class="card-text flex-grow-1" style="height: 3em;overflow: hidden;">Este código adiciona funcionalidade a vários botões na página
+                            para
+                            atualizar uma lista de elementos li. Ele usa o jQuery para adicionar uma função de clique
+                            aos botões dentro do elemento #nomes na página. Quando um desses botões é clicado, o texto
+                            dos elementos li dentro do elemento #lista_teste é atualizado para incluir o texto do botão
+                            clicado. O código inclui o Bootstrap para fornecer estilos padrão para a página e um arquivo
+                            JavaScript externo chamado link6.js que contém o código jQuery. Quando um botão é clicado, o
+                            texto "Apareça: " é adicionado a cada elemento li, seguido pelo texto do botão clicado.</p>
+                        <button type="button" class="btn btn-info mostrar"
+                            data-title="$(this).siblings('.card-title').text()"
+                            data-description="$(this).siblings('.card-text').text()">Ler mais</button>
+                        <a href="paginas/pag07.html?fromlink=true" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark-subtle h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Comparador de Valores</h5>
+                        <p class="card-text flex-grow-1" style="height: 3em;overflow: hidden;">Este código adiciona funcionalidade a um botão e a dois campos
+                            de entrada
+                            na página para comparar os valores inseridos nos campos de entrada. Ele usa o jQuery para
+                            adicionar uma função de clique ao botão #bot1 na página. Quando o botão é clicado, os
+                            valores dos campos de entrada #campo1 e #campo2 são obtidos e comparados. Se os valores
+                            forem iguais, uma caixa de diálogo de alerta é exibida com a mensagem “Valores Iguais”. Caso
+                            contrário, uma caixa de diálogo de alerta é exibida com a mensagem “Valores Diferentes”. O
+                            código inclui o Bootstrap para fornecer estilos padrão para a página e um arquivo JavaScript
+                            externo chamado link8.js que contém o código jQuery.</p>
+
+                        <button type="button" class="btn btn-info mostrar"
+                            data-title="$(this).siblings('.card-title').text()"
+                            data-description="$(this).siblings('.card-text').text()">Ler mais</button>
+                        <a href="paginas/pag08.html?fromlink=true" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark-subtle h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Atualizador de Nome</h5>
+                        <p class="card-text flex-grow-1" style="height: 3em;overflow: hidden;">Este código adiciona funcionalidade a um botão e a um campo de
+                            entrada na
+                            página para atualizar o texto de um elemento p. Ele usa o jQuery para adicionar uma função
+                            de clique ao botão #button-addon2 na página. Quando o botão é clicado, o valor do campo de
+                            entrada #nomeInput é obtido e passado para a função atualizarTexto, que atualiza o texto do
+                            elemento p dentro do elemento body para incluir o valor do campo de entrada. O código inclui
+                            o Bootstrap para fornecer estilos padrão para a página e um arquivo JavaScript externo
+                            chamado link7.js que contém o código jQuery. Quando o botão é clicado, o texto "Nessa tag
+                            “p” vai aparecer o nome: " é adicionado ao elemento p, seguido pelo valor do campo de
+                            entrada, que é exibido em vermelho.</p>
+                        <button type="button" class="btn btn-info mostrar"
+                            data-title="$(this).siblings('.card-title').text()"
+                            data-description="$(this).siblings('.card-text').text()">Ler mais</button>
+                        <a href="paginas/pag08_teste.html?fromlink=true" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 ">
+                <div class="card bg-dark-subtle h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Botão de Boas-Vindas</h5>
+                        <p class="card-text flex-grow-1" style="height: 3em;overflow: hidden;">Este código adiciona funcionalidade a um botão na página para
+                            exibir uma
+                            mensagem de boas-vindas. Ele usa o jQuery para adicionar uma função de clique ao botão
+                            #clicar na página. Quando o botão é clicado, uma caixa de diálogo de alerta é exibida com a
+                            mensagem “Seja Bem Vindo”. O código inclui o Bootstrap para fornecer estilos padrão para a
+                            página e o código jQuery está incluído diretamente na página HTML.</p>
+                        <button type="button" class="btn btn-info mostrar"
+                            data-title="$(this).siblings('.card-title').text()"
+                            data-description="$(this).siblings('.card-text').text()">Ler mais</button>
+                        <a href="paginas/pag09.html?fromlink=true" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark-subtle h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Calculadora Básica</h5>
+                        <p class="card-text flex-grow-1" style="height: 3em;overflow: hidden;">Este código adiciona funcionalidade a vários botões e campos de
+                            entrada na
+                            página para realizar operações matemáticas básicas. Ele usa o jQuery para adicionar funções
+                            de clique aos botões dentro do elemento #operadores na página e uma função de envio ao
+                            formulário. Quando um desses botões é clicado, o texto do botão é obtido e exibido no
+                            elemento #operador para indicar a operação selecionada. Quando o formulário é enviado, os
+                            valores dos campos de entrada #campo1 e #campo2 são obtidos e usados para realizar a
+                            operação selecionada. O resultado da operação é exibido em uma caixa de diálogo de alerta e
+                            no elemento #total. O código inclui o Bootstrap para fornecer estilos padrão para a página e
+                            um arquivo JavaScript externo chamado link9.js que contém o código jQuery. As operações
+                            disponíveis são adição, subtração, divisão e multiplicação.</p>
+                        <button type="button" class="btn btn-info mostrar"
+                            data-title="$(this).siblings('.card-title').text()"
+                            data-description="$(this).siblings('.card-text').text()">Ler mais</button>
+                        <a href="paginas/pag010.html?fromlink=true" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark-subtle h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Animação de Deslizamento</h5>
+                        <p class="card-text flex-grow-1" style="height: 3em;overflow: hidden;">Este código é um exemplo de uma página HTML que usa a
+                            biblioteca jQuery
+                            para animar dois elementos div na página. Quando o botão “Animar” é clicado, o primeiro div
+                            desliza para cima e depois reaparece, enquanto o segundo div desliza para cima e depois
+                            desaparece. O código inclui o Bootstrap para fornecer estilos padrão para a página e um
+                            arquivo CSS externo chamado estilo3.css que contém os estilos para os elementos div.</p>
+                        <button type="button" class="btn btn-info mostrar"
+                            data-title="$(this).siblings('.card-title').text()"
+                            data-description="$(this).siblings('.card-text').text()">Ler mais</button>
+                        <a href="paginas/pag011.html?fromlink=true" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 ">
+                <div class="card bg-dark-subtle h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Animação de Ampliação e Redução</h5>
+                        <p class="card-text flex-grow-1" style="height: 3em;overflow: hidden;">Este código é um exemplo de uma página HTML que usa a
+                            biblioteca jQuery
+                            para animar um elemento div na página. Quando o botão “Ampliar” é clicado, o elemento div é
+                            animado para aumentar de tamanho e mudar algumas de suas propriedades CSS. Quando o botão
+                            “Reduzir” é clicado, o elemento div é animado para retornar ao seu tamanho e propriedades
+                            originais. O código inclui o Bootstrap para fornecer estilos padrão para a página e um bloco
+                            de estilo interno que contém os estilos para o elemento div.</p>
+                        <button type="button" class="btn btn-info mostrar"
+                            data-title="$(this).siblings('.card-title').text()"
+                            data-description="$(this).siblings('.card-text').text()">Ler mais</button>
+                        <a href="paginas/pag012.html?fromlink=true" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark-subtle h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Animação de Movimento</h5>
+                        <p class="card-text flex-grow-1" style="height: 3em;overflow: hidden;">Este código é um exemplo de uma página HTML que usa a
+                            biblioteca jQuery
+                            para animar um elemento div na página. Quando o botão “Direita” é clicado, o elemento div é
+                            animado para se mover para a direita em 10% da largura da janela. Quando o botão “Esquerda”
+                            é clicado, o elemento div é animado para se mover para a esquerda em 10% da largura da
+                            janela. O código inclui o Bootstrap para fornecer estilos padrão para a página e um bloco de
+                            estilo interno que contém os estilos para o elemento div.</p>
+                        <button type="button" class="btn btn-info mostrar"
+                            data-title="$(this).siblings('.card-title').text()"
+                            data-description="$(this).siblings('.card-text').text()">Ler mais</button>
+                        <a href="paginas/pag013.html?fromlink=true" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark-subtle h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Animação de Movimento com Parada</h5>
+                        <p class="card-text flex-grow-1" style="height: 3em;overflow: hidden;">Este código é um exemplo de uma página HTML que usa a
+                            biblioteca jQuery
+                            para animar um elemento div na página. Quando o botão “Direita” é clicado, o elemento div é
+                            animado para se mover para a direita em 80% da largura da janela. Quando o botão “Esquerda”
+                            é clicado, o elemento div é animado para se mover para a esquerda em 80% da largura da
+                            janela. Quando o botão “Pare!” é clicado, a animação do elemento div é interrompida. O
+                            código inclui o Bootstrap para fornecer estilos padrão para a página e um bloco de estilo
+                            interno que contém os estilos para o elemento div.</p>
+                        <button type="button" class="btn btn-info mostrar"
+                            data-title="$(this).siblings('.card-title').text()"
+                            data-description="$(this).siblings('.card-text').text()">Ler mais</button>
+                        <a href="paginas/pag014.html?fromlink=true" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card bg-dark-subtle h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Animação de Alternância</h5>
+                        <p class="card-text flex-grow-1" style="height: 3em;overflow: hidden;">Este código é um exemplo de uma página HTML que usa a
+                            biblioteca jQuery para animar um elemento div na página. Quando o botão "Mudar Animação" é
+                            clicado, o elemento div é animado para alternar entre ser visível e oculto usando o método
+                            slideToggle(). O código inclui o Bootstrap para fornecer estilos padrão para a página e um
+                            bloco de estilo interno que contém os estilos para o elemento div.</p>
+                        <button type="button" class="btn btn-info mostrar" data-title="Animação de Alternância"
+                            data-description="Este código é um exemplo de uma página HTML que usa a biblioteca jQuery para animar um elemento div na página. Quando o botão 'Mudar Animação' é clicado, o elemento div é animado para alternar entre ser visível e oculto usando o método slideToggle(). O código inclui o Bootstrap para fornecer estilos padrão para a página e um bloco de estilo interno que contém os estilos para o elemento div.">Ler
+                            mais</button>
+                        <a href="paginas/pag015.html?fromlink=true" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark-subtle h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Animação de Clique do Mouse</h5>
+                        <p class="card-text flex-grow-1" style="height: 3em;overflow: hidden;">Este código é um exemplo de uma página HTML que usa a
+                            biblioteca jQuery para detectar eventos de clique do mouse em um elemento p na página.
+                            Quando o botão do mouse é pressionado sobre o elemento p, o texto "Mouse Down" é adicionado
+                            ao elemento. Quando o botão do mouse é solto sobre o elemento p, o texto "Mouse Up" é
+                            adicionado ao elemento. Quando o botão "Limpar" é clicado, todos os elementos span dentro do
+                            elemento p são removidos. O código inclui o Bootstrap para fornecer estilos padrão para a
+                            página.</p>
+                        <button type="button" class="btn btn-info mostrar" data-title="Animação de Clique do Mouse"
+                            data-description="Este código é um exemplo de uma página HTML que usa a biblioteca jQuery para detectar eventos de clique do mouse em um elemento p na página. Quando o botão do mouse é pressionado sobre o elemento p, o texto 'Mouse Down' é adicionado ao elemento. Quando o botão do mouse é solto sobre o elemento p, o texto 'Mouse Up' é adicionado ao elemento. Quando o botão 'Limpar' é clicado, todos os elementos span dentro do elemento p são removidos. O código inclui o Bootstrap para fornecer estilos padrão para a página.">Ler
+                            mais</button>
+                        <a href="paginas/pag016.html?fromlink=true" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal genérico -->
+    <div class="modal fade" id="myModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="modal-description"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('.mostrar').click(function () {
+                var title = $(this).siblings('.card-title').text();
+                var description = $(this).siblings('.card-text').text();
+
+                $('#myModalLabel').text(title);
+                $('#modal-description').text(description);
+
+                $('#myModal').modal('show');
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
